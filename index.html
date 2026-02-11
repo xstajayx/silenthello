@@ -1,192 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Silent Hello is a quiet daily presence signal app that helps loved ones stay connected with calm, respectful check-ins."
-    />
-    <title>Silent Hello | Quiet Daily Presence Signal</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-    <header class="site-header" id="top">
-      <div class="container nav-wrap">
-        <div class="brand">Silent Hello</div>
-        <nav aria-label="Primary">
-          <ul class="nav-links">
-            <li><a href="#how-it-works">How it works</a></li>
-            <li><a href="#premium-pack">Premium</a></li>
-            <li><a href="#ads-disclosure">Ads</a></li>
-            <li><a href="#donate">Donate</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b1220" />
+  <meta
+    name="description"
+    content="Silent Hello is a quiet daily presence signal — a calm, private way to let someone know you're here."
+  />
+  <title>Silent Hello | A quiet way to say “I’m here.”</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-    <main id="main-content">
-      <section class="hero section">
-        <div class="container hero-content">
-          <p class="eyebrow">Android App</p>
-          <h1>Silent Hello</h1>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Silent Hello home">
+        <span class="brand-dot" aria-hidden="true"></span>
+        Silent Hello
+      </a>
+
+      <nav aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primaryNav">
+          Menu
+        </button>
+        <ul class="nav-links" id="primaryNav">
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#signals">Signals</a></li>
+          <li><a href="#video">Video</a></li>
+          <li><a href="#premium-pack">Premium</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">A gentle Android app</p>
+          <h1>A quiet way to say<br><span class="soft">“I’m here.”</span></h1>
+
           <p class="tagline">
-            A calm, private way to send a quiet daily presence signal to people
-            who matter.
+            Silent Hello helps you send a calm, private check-in to the people who matter —
+            without the pressure to talk.
           </p>
-          <a class="button primary" href="#" aria-label="Get Silent Hello on Google Play"
-            >Get it on Google Play</a
-          >
-        </div>
-      </section>
 
-      <section class="section" id="how-it-works">
-        <div class="container card">
-          <h2>How Silent Hello works</h2>
-          <p>
-            Silent Hello is built around one simple idea: a gentle, daily signal
-            that says, <em>"I'm here."</em> Open the app, send your check-in,
-            and your selected contacts can see your daily presence status.
-          </p>
-          <p>
-            It is intentionally quiet and minimal, designed for low-pressure
-            connection without constant messaging.
+          <div class="cta-row">
+            <a class="button primary" href="#" aria-label="Get Silent Hello on Google Play">
+              Get it on Google Play
+            </a>
+            <a class="button ghost" href="#how-it-works">
+              See how it works
+            </a>
+          </div>
+
+          <p class="micro">
+            No feed. No noise. Just a simple signal — when words feel like too much.
           </p>
         </div>
-      </section>
 
-      <section class="section" id="premium-pack">
-        <div class="container card">
-          <h2>Premium Pack</h2>
-          <p>
-            Upgrade to Premium Pack to remove ads and unlock additional features
-            for a cleaner, enhanced experience.
-          </p>
-          <ul>
-            <li>Ad-free experience</li>
-            <li>Access to extra customization features</li>
-            <li>Support continued development</li>
-          </ul>
-        </div>
-      </section>
+        <!-- HERO MEDIA PLACEHOLDER -->
+        <div class="hero-media" aria-label="App preview image placeholder">
+          <div class="media-card">
+            <div class="media-top">
+              <span class="pill">Image placeholder</span>
+              <span class="pill subtle">Phone mockup</span>
+            </div>
 
-      <section class="section" id="ads-disclosure">
-        <div class="container card">
-          <h2>Ads disclosure</h2>
-          <p>
-            Silent Hello may display ads in the free version to support
-            operating costs. Ads are removed with Premium Pack.
-          </p>
-          <p>
-            We aim to keep ads respectful and unobtrusive to preserve the calm
-            experience of the app.
-          </p>
-        </div>
-      </section>
+            <!-- Replace this block later with <img src="..." alt="..." /> -->
+            <div class="placeholder-grid">
+              <div class="ph ph-phone">
+                <div class="ph-notch"></div>
+                <div class="ph-screen">
+                  <div class="ph-line"></div>
+                  <div class="ph-line short"></div>
+                  <div class="ph-chip"></div>
+                  <div class="ph-chip"></div>
+                </div>
+              </div>
+              <div class="ph ph-soft">
+                <div class="ph-line"></div>
+                <div class="ph-line short"></div>
+                <div class="ph-bubble"></div>
+              </div>
+            </div>
 
-      <section class="section" id="donate">
-        <div class="container card">
-          <h2>Donate</h2>
-          <p>
-            If Silent Hello helps you and your loved ones, you can support the
-            project directly.
-          </p>
-          <div class="button-row">
-            <a class="button secondary" href="#">Donate via PayPal</a>
-            <a class="button secondary" href="#">Support on Ko-fi</a>
+            <p class="media-caption">
+              Drop your screenshots here later (Play Store shots, UI screens, etc.)
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section" id="faq">
-        <div class="container card">
-          <h2>Frequently Asked Questions</h2>
-          <div class="accordion" data-accordion>
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how-it-works">
+      <div class="container split">
+        <div class="card">
+          <h2>How Silent Hello works</h2>
+          <p class="lead">
+            Silent Hello is built around one simple idea: a gentle daily presence signal that says,
+            <em>“I’m here.”</em>
+          </p>
+
+          <ol class="steps">
+            <li>
+              <strong>You tap a signal.</strong>
+              <span>OK, not my best day, or thinking of you.</span>
+            </li>
+            <li>
+              <strong>Your chosen people receive it.</strong>
+              <span>A calm notification — no pressure to reply.</span>
+            </li>
+            <li>
+              <strong>Connection stays easy.</strong>
+              <span>Quiet care, without constant messaging.</span>
+            </li>
+          </ol>
+        </div>
+
+        <!-- LIFESTYLE IMAGE PLACEHOLDER -->
+        <div class="card media-side" aria-label="Lifestyle image placeholder">
+          <div class="media-top">
+            <span class="pill">Image placeholder</span>
+            <span class="pill subtle">Lifestyle</span>
+          </div>
+
+          <!-- Replace with real image later -->
+          <div class="ph ph-landscape">
+            <div class="ph-sun"></div>
+            <div class="ph-hill"></div>
+            <div class="ph-hill two"></div>
+          </div>
+
+          <p class="media-caption">
+            Add a calm photo later (hand holding phone, sunrise, quiet coffee, etc.)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNALS -->
+    <section class="section" id="signals">
+      <div class="container card">
+        <h2>The signals</h2>
+        <p class="lead">
+          Simple on purpose — because not every day needs an explanation.
+        </p>
+
+        <div class="signals">
+          <article class="signal">
+            <div class="signal-badge" aria-hidden="true">🟢</div>
+            <h3>I’m okay</h3>
+            <p>A quiet “still here” check-in.</p>
+          </article>
+
+          <article class="signal">
+            <div class="signal-badge" aria-hidden="true">🟡</div>
+            <h3>Not my best day</h3>
+            <p>A soft nudge that says you could use a little support.</p>
+          </article>
+
+          <article class="signal">
+            <div class="signal-badge" aria-hidden="true">🤍</div>
+            <h3>Thinking of you</h3>
+            <p>Care, without needing a reason or a conversation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section class="section" id="video">
+      <div class="container card">
+        <div class="section-head">
+          <h2>Video preview</h2>
+          <p class="lead">Add a short demo later (15–30 seconds is perfect).</p>
+        </div>
+
+        <!-- VIDEO PLACEHOLDER -->
+        <div class="video-shell" role="group" aria-label="Video placeholder">
+          <!-- Replace later with a real <video> or an embedded YouTube iframe -->
+          <button class="video-play" type="button" aria-label="Play video (placeholder)">
+            ▶
+          </button>
+          <div class="video-meta">
+            <div class="pill">Video placeholder</div>
+            <div class="pill subtle">SilentHello-demo.mp4</div>
+          </div>
+        </div>
+
+        <p class="micro">
+          When you have it, drop in a <code>&lt;video controls&gt;</code> or YouTube embed and it’ll slot right in.
+        </p>
+      </div>
+    </section>
+
+    <!-- PREMIUM -->
+    <section class="section" id="premium-pack">
+      <div class="container card">
+        <h2>Premium Pack</h2>
+        <p class="lead">
+          For people who want the calmest experience — and to support the project.
+        </p>
+        <ul class="bullets">
+          <li><strong>Remove ads</strong> for a cleaner feel</li>
+          <li><strong>Extra customisation</strong> (as features grow)</li>
+          <li><strong>Supports development</strong> and ongoing improvements</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ADS -->
+    <section class="section" id="ads-disclosure">
+      <div class="container card">
+        <h2>Ads disclosure</h2>
+        <p>
+          The free version may show ads to support operating costs. Premium removes them.
+          We aim to keep ads respectful and unobtrusive so the app stays calm.
+        </p>
+      </div>
+    </section>
+
+    <!-- DONATE -->
+    <section class="section" id="donate">
+      <div class="container card">
+        <h2>Donate</h2>
+        <p class="lead">
+          If Silent Hello helps you or someone you care about, you can support it directly.
+        </p>
+
+        <div class="button-row">
+          <a class="button secondary" href="#">Donate via PayPal</a>
+          <a class="button secondary" href="#">Support on Ko-fi</a>
+        </div>
+
+        <p class="micro">
+          (You can add real links later — keep placeholders for now.)
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container card">
+        <h2>Frequently asked questions</h2>
+
+        <div class="accordion" data-accordion>
+          <div class="qa">
             <h3>
-              <button
-                class="accordion-trigger"
-                id="faq-q1"
-                aria-expanded="false"
-                aria-controls="faq-a1"
-              >
+              <button class="accordion-trigger" id="faq-q1" aria-expanded="false" aria-controls="faq-a1">
                 Is Silent Hello a messaging app?
               </button>
             </h3>
-            <div
-              class="accordion-panel"
-              id="faq-a1"
-              role="region"
-              aria-labelledby="faq-q1"
-              hidden
-            >
-              <p>
-                No. It is focused on lightweight, daily presence signals rather
-                than full conversations.
-              </p>
+            <div class="accordion-panel" id="faq-a1" role="region" aria-labelledby="faq-q1" hidden>
+              <p>No — it’s a lightweight presence signal, not a conversation feed.</p>
             </div>
+          </div>
 
+          <div class="qa">
             <h3>
-              <button
-                class="accordion-trigger"
-                id="faq-q2"
-                aria-expanded="false"
-                aria-controls="faq-a2"
-              >
+              <button class="accordion-trigger" id="faq-q2" aria-expanded="false" aria-controls="faq-a2">
                 Can I remove ads?
               </button>
             </h3>
-            <div
-              class="accordion-panel"
-              id="faq-a2"
-              role="region"
-              aria-labelledby="faq-q2"
-              hidden
-            >
-              <p>
-                Yes. The Premium Pack removes ads and includes extra features.
-              </p>
+            <div class="accordion-panel" id="faq-a2" role="region" aria-labelledby="faq-q2" hidden>
+              <p>Yes. Premium removes ads and helps fund development.</p>
             </div>
+          </div>
 
+          <div class="qa">
             <h3>
-              <button
-                class="accordion-trigger"
-                id="faq-q3"
-                aria-expanded="false"
-                aria-controls="faq-a3"
-              >
+              <button class="accordion-trigger" id="faq-q3" aria-expanded="false" aria-controls="faq-a3">
                 How can I request my data?
               </button>
             </h3>
-            <div
-              class="accordion-panel"
-              id="faq-a3"
-              role="region"
-              aria-labelledby="faq-q3"
-              hidden
-            >
-              <p>
-                Inside the app, go to settings to request data export or account
-                deletion.
-              </p>
+            <div class="accordion-panel" id="faq-a3" role="region" aria-labelledby="faq-q3" hidden>
+              <p>Inside the app, go to Settings to request data export or account deletion (where available).</p>
             </div>
           </div>
         </div>
-      </section>
-    </main>
 
-    <footer class="site-footer">
-      <div class="container footer-content">
-        <p>Contact: <a href="mailto:support@silenthello.app">support@silenthello.app</a></p>
-        <p>
-          <a href="privacy.html">Privacy</a> ·
-          <a href="support.html">Support</a> ·
-          <a href="terms.html">Terms</a>
-        </p>
+        <div class="quiet-note">
+          <p class="micro">
+            Silent Hello is designed to feel safe and low-pressure. You control who receives your check-ins.
+          </p>
+        </div>
       </div>
-    </footer>
+    </section>
 
-    <script src="app.js"></script>
-  </body>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p class="micro">
+        Contact:
+        <a href="mailto:support@silenthello.co.uk">support@silenthello.co.uk</a>
+      </p>
+
+      <p class="micro">
+        <a href="privacy.html">Privacy</a> ·
+        <a href="support.html">Support</a> ·
+        <a href="terms.html">Terms</a>
+      </p>
+
+      <p class="micro subtle">
+        © <span id="year"></span> Silent Hello
+      </p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
 </html>
