@@ -1,58 +1,25 @@
-(function () {
-  const accordion = document.querySelector('[data-accordion]');
+// Footer year
+document.getElementById("year").textContent = new Date().getFullYear();
 
-  if (accordion) {
-    const triggers = accordion.querySelectorAll('.accordion-trigger');
+// Accordion (accessible)
+document.querySelectorAll("[data-accordion] .accordion-trigger").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const expanded = btn.getAttribute("aria-expanded") === "true";
+    const panelId = btn.getAttribute("aria-controls");
+    const panel = document.getElementById(panelId);
 
-    triggers.forEach((trigger) => {
-      trigger.addEventListener('click', () => {
-        const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
-        const panelId = trigger.getAttribute('aria-controls');
-        const panel = panelId ? document.getElementById(panelId) : null;
-
-        if (!panel) {
-          return;
-        }
-
-        trigger.setAttribute('aria-expanded', String(!isExpanded));
-        panel.hidden = isExpanded;
-      });
-
-      trigger.addEventListener('keydown', (event) => {
-        const key = event.key;
-
-        if (key !== 'ArrowDown' && key !== 'ArrowUp') {
-          return;
-        }
-
-        event.preventDefault();
-        const triggerArray = Array.from(triggers);
-        const currentIndex = triggerArray.indexOf(trigger);
-        const nextIndex =
-          key === 'ArrowDown'
-            ? (currentIndex + 1) % triggerArray.length
-            : (currentIndex - 1 + triggerArray.length) % triggerArray.length;
-
-        triggerArray[nextIndex].focus();
-      });
-    });
-  }
-
-  const samePageAnchors = document.querySelectorAll('a[href^="#"]');
-  samePageAnchors.forEach((anchor) => {
-    anchor.addEventListener('click', (event) => {
-      const href = anchor.getAttribute('href');
-      if (!href || href === '#') {
-        return;
-      }
-
-      const target = document.querySelector(href);
-      if (!target) {
-        return;
-      }
-
-      event.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
+    btn.setAttribute("aria-expanded", String(!expanded));
+    if (panel) panel.hidden = expanded;
   });
-})();
+});
+
+// Mobile nav
+const toggle = document.querySelector(".nav-toggle");
+const nav = document.getElementById("primaryNav");
+
+if (toggle && nav) {
+  toggle.addEventListener("click", () => {
+    const open = nav.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", String(open));
+  });
+}
