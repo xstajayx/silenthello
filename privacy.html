@@ -16,6 +16,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="support.html">Support</a></li>
             <li><a href="terms.html">Terms</a></li>
+            <li><a href="privacy.html" aria-current="page">Privacy</a></li>
           </ul>
         </nav>
       </div>
@@ -24,33 +25,89 @@
     <main class="section">
       <div class="container card legal">
         <h1>Privacy Policy</h1>
-        <p>Last updated: January 1, 2026</p>
+        <p>Last updated: February 15, 2026</p>
 
         <h2>Overview</h2>
         <p>
-          Silent Hello is designed to help users send a quiet daily presence
-          signal to trusted contacts. We collect only the information needed to
-          provide core app functionality.
+          Silent Hello helps you send a quiet daily presence signal (“Hello”) to trusted people.
+          We collect only the data needed to provide the core app features: sign-in, connecting
+          to other users, sending the daily signal, and allowing you to export or delete your data.
         </p>
+
+        <h2>What we collect</h2>
+        <p>Depending on how you use the app, we may collect and store:</p>
+        <ul>
+          <li><strong>Account information</strong>: email address (if you create an email account) or an anonymous account ID.</li>
+          <li><strong>Profile nickname</strong>: a display name you choose (e.g. “Dad”, “Nan”).</li>
+          <li>
+            <strong>Daily signal records</strong>: the date and timestamp when you send a Hello.
+            This does <em>not</em> include message content.
+          </li>
+          <li><strong>Connection data</strong>: who is connected to whom (sender/viewer link).</li>
+          <li><strong>Invites and requests</strong>: invite codes you generate and connection requests/approval status.</li>
+        </ul>
+
+        <h2>What we do not collect</h2>
+        <ul>
+          <li><strong>No precise location tracking</strong> and no background location.</li>
+          <li><strong>No contacts upload</strong> (we don’t access your address book).</li>
+          <li><strong>No message content</strong> beyond a simple “Hello sent” signal.</li>
+        </ul>
+
+        <h2>How your data is used</h2>
+        <ul>
+          <li>To sign you in and secure your account.</li>
+          <li>To show your connected viewers whether you’ve sent today’s Hello.</li>
+          <li>To manage invites/requests so you control who can view your signal.</li>
+          <li>To improve reliability and fix bugs (see Firebase services below).</li>
+        </ul>
 
         <h2>Firebase services</h2>
         <p>
-          Silent Hello uses Firebase services (such as authentication,
-          cloud-based data storage, analytics, and crash reporting) to operate
-          and improve reliability.
+          Silent Hello uses Google Firebase to operate the app, including:
+          <strong>Authentication</strong> (sign-in), <strong>Cloud Firestore</strong> (data storage),
+          and (if enabled in your build) optional reliability tools such as <strong>Crash reporting</strong>.
+        </p>
+        <p>
+          Firebase processes data on our behalf to provide these services.
         </p>
 
-        <h2>No location tracking</h2>
+        <h2>Sharing and visibility</h2>
         <p>
-          Silent Hello does not track your precise location for app
-          functionality and does not use background location tracking.
+          Your nickname and today’s Hello status are visible only to people you have connected with
+          (approved access). You can remove access by deleting the connection (or deleting your account).
+        </p>
+
+        <h2>Data retention</h2>
+        <p>
+          We keep your data for as long as your account remains active so the app can function.
+          You can delete your account at any time to permanently remove your stored data.
         </p>
 
         <h2>Data access, export, and deletion</h2>
         <p>
-          You can request data export and account deletion directly inside the
-          app settings. These controls are available in-app so you can manage
-          your information without contacting support.
+          You can export your data and delete your account inside the app. Export produces a data
+          pack (summary and JSON) that you can save or share. Deleting your account removes your stored
+          records from our Firebase database where possible and then deletes your authentication account.
+        </p>
+
+        <h2>Security</h2>
+        <p>
+          We use Firebase security rules and authenticated access controls to protect your data.
+          No method of storage is 100% secure, but we aim to use reasonable safeguards to prevent
+          unauthorized access.
+        </p>
+
+        <h2>Children</h2>
+        <p>
+          Silent Hello is not intended for children under 13. If you believe a child has provided
+          personal information, please contact us so we can remove it.
+        </p>
+
+        <h2>Changes to this policy</h2>
+        <p>
+          We may update this policy from time to time. The “Last updated” date at the top will change
+          when we do.
         </p>
 
         <h2>Contact</h2>
